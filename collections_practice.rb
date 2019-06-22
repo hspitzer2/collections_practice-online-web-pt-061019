@@ -28,6 +28,7 @@ def kesha_maker(array)
 end
 
 kesha_maker(["blake", "ashley", "scott"])
+
 def find_a(array)
   array.select {|string| string.start_with?("a")}
 end
@@ -54,8 +55,7 @@ def add_s(array)
 end
 
 # def kesha_maker(array)
-#   nu_array = array
-#   nu_array.each do |string|
+#   array.each do |string|
 #     string[2] = "$"
 #     nu_array<< string
 #   end
