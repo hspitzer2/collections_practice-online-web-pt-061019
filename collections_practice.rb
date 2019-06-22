@@ -21,6 +21,13 @@ def reverse_array(array)
   array.reverse
 end
 
+def kesha_maker(array)
+  array.each do |item|
+    item[2] = "$"
+  end
+end
+
+kesha_maker(["blake", "ashley", "scott"])
 def find_a(array)
   array.select {|string| string.start_with?("a")}
 end
@@ -46,10 +53,10 @@ def add_s(array)
  end
 end
 
-def kesha_maker(array)
-  nu_array = array
-  nu_array.each do |string|
-    string[2] = "$"
-    nu_array<< string
-  end
-end
+# def kesha_maker(array)
+#   nu_array = array
+#   nu_array.each do |string|
+#     string[2] = "$"
+#     nu_array<< string
+#   end
+# end
